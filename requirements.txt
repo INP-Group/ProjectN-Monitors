@@ -1,2 +1,6 @@
 Cython
 gevent==1.1b1
+
+
+# sudo apt-get install python3-pyqt5
+PyQt5
