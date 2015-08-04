@@ -6,6 +6,7 @@ import time
 import sys
 from PyQt4 import QtCore
 
+
 from monitors.cx4.cython_wrapper import ccda
 import signal
 

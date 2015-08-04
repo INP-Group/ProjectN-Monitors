@@ -4,14 +4,11 @@
 # imports for testing
 import time
 import sys
-
-
-import signal
-
 from PyQt4 import QtCore
 
 
 from monitors.cx4.cython_wrapper import ccda
+import signal
 
 t1 = time.time()
 
@@ -34,7 +31,7 @@ app = QtCore.QCoreApplication(sys.argv)
 
 chans = []
 for x in range(nchans):
-    chans.append(ccda.sdchan(None, "", "cx::mid:60.NAME%d" % x))
+    chans.append(ccda.sdchan(None, "", "cx::127.0.0.1:60.NAME.%d" % x))
 
 
 for x in chans:
