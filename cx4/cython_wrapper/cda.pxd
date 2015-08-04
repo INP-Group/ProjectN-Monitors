@@ -2,7 +2,7 @@
 # by Fedor Emanov
 
 #from misc_types cimport *
-from monitors.cx4.cython_wrapper.cx cimport *
+from cx cimport *
 from cx_common_types cimport *
 
 cdef extern from "cda.h":

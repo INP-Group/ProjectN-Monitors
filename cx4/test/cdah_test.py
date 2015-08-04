@@ -3,7 +3,7 @@ import signal
 
 import sys
 from monitors.cx4.cython_wrapper import ccda
-from PyQt5 import QtCore
+from PyQt4 import QtCore
 import time
 
 

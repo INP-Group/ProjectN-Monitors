@@ -1,5 +1,5 @@
 
-from monitors.cx4.cython_wrapper.misc_types cimport *
+from misc_types cimport *
 
 cdef extern from "cx_common_types.h":
     ctypedef int CxDataRef_t

@@ -4,9 +4,11 @@
 # imports for testing
 import time
 import sys
+
+
 import signal
 
-from PyQt5 import QtCore
+from PyQt4 import QtCore
 
 
 from monitors.cx4.cython_wrapper import ccda

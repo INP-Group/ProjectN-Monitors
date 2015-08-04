@@ -1303,7 +1303,7 @@ static char __pyx_k_metaclass[] = "__metaclass__";
 static char __pyx_k_max_nelems[] = "max_nelems";
 static char __pyx_k_pyqtSignal[] = "pyqtSignal";
 static char __pyx_k_pyx_vtable[] = "__pyx_vtable__";
-static char __pyx_k_PyQt5_QtCore[] = "PyQt5.QtCore";
+static char __pyx_k_PyQt4_QtCore[] = "PyQt4.QtCore";
 static char __pyx_k_raw_prev_val[] = "raw_prev_val";
 static char __pyx_k_return_value[] = "return_value";
 static char __pyx_k_valueChanged[] = "valueChanged";
@@ -1368,7 +1368,7 @@ static PyObject *__pyx_n_s_PY_CXDTYPE_UINT32;
 static PyObject *__pyx_n_s_PY_CXDTYPE_UINT64;
 static PyObject *__pyx_n_s_PY_CXDTYPE_UINT8;
 static PyObject *__pyx_n_s_PY_CXDTYPE_UNKNOWN;
-static PyObject *__pyx_n_s_PyQt5_QtCore;
+static PyObject *__pyx_n_s_PyQt4_QtCore;
 static PyObject *__pyx_n_s_QObject;
 static PyObject *__pyx_n_s_Signaler;
 static PyObject *__pyx_n_s_Signaler___init;
@@ -7937,7 +7937,7 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_PY_CXDTYPE_UINT64, __pyx_k_PY_CXDTYPE_UINT64, sizeof(__pyx_k_PY_CXDTYPE_UINT64), 0, 0, 1, 1},
   {&__pyx_n_s_PY_CXDTYPE_UINT8, __pyx_k_PY_CXDTYPE_UINT8, sizeof(__pyx_k_PY_CXDTYPE_UINT8), 0, 0, 1, 1},
   {&__pyx_n_s_PY_CXDTYPE_UNKNOWN, __pyx_k_PY_CXDTYPE_UNKNOWN, sizeof(__pyx_k_PY_CXDTYPE_UNKNOWN), 0, 0, 1, 1},
-  {&__pyx_n_s_PyQt5_QtCore, __pyx_k_PyQt5_QtCore, sizeof(__pyx_k_PyQt5_QtCore), 0, 0, 1, 1},
+  {&__pyx_n_s_PyQt4_QtCore, __pyx_k_PyQt4_QtCore, sizeof(__pyx_k_PyQt4_QtCore), 0, 0, 1, 1},
   {&__pyx_n_s_QObject, __pyx_k_QObject, sizeof(__pyx_k_QObject), 0, 0, 1, 1},
   {&__pyx_n_s_Signaler, __pyx_k_Signaler, sizeof(__pyx_k_Signaler), 0, 0, 1, 1},
   {&__pyx_n_s_Signaler___init, __pyx_k_Signaler___init, sizeof(__pyx_k_Signaler___init), 0, 0, 1, 1},
@@ -8265,14 +8265,14 @@ PyMODINIT_FUNC PyInit_ccda(void)
  * # cython: c_string_type=bytes, c_string_encoding=ascii
  * world = "hi"             # <<<<<<<<<<<<<<
  * 
- * from monitors.cx4.cython_wrapper.cda cimport *
+ * from cda cimport *
  */
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_world, __pyx_n_s_hi) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 3; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
 
   /* "monitors/cx4/cython_wrapper/ccda.pyx":7
- * from monitors.cx4.cython_wrapper.cda cimport *
+ * from cda cimport *
  * cimport libc.math as math
- * from PyQt5.QtCore import QObject, pyqtSignal             # <<<<<<<<<<<<<<
+ * from PyQt4.QtCore import QObject, pyqtSignal             # <<<<<<<<<<<<<<
  * 
  * # copy enums to python syde
  */
@@ -8284,7 +8284,7 @@ PyMODINIT_FUNC PyInit_ccda(void)
   __Pyx_INCREF(__pyx_n_s_pyqtSignal);
   __Pyx_GIVEREF(__pyx_n_s_pyqtSignal);
   PyList_SET_ITEM(__pyx_t_1, 1, __pyx_n_s_pyqtSignal);
-  __pyx_t_2 = __Pyx_Import(__pyx_n_s_PyQt5_QtCore, __pyx_t_1, -1); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 7; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_2 = __Pyx_Import(__pyx_n_s_PyQt4_QtCore, __pyx_t_1, -1); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 7; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_t_1 = __Pyx_ImportFrom(__pyx_t_2, __pyx_n_s_QObject); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 7; __pyx_clineno = __LINE__; goto __pyx_L1_error;}

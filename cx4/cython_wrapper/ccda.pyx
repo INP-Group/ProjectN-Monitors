@@ -2,9 +2,9 @@
 # cython: c_string_type=bytes, c_string_encoding=ascii
 world = "hi"
 
-from monitors.cx4.cython_wrapper.cda cimport *
+from cda cimport *
 cimport libc.math as math
-from PyQt5.QtCore import QObject, pyqtSignal
+from PyQt4.QtCore import QObject, pyqtSignal
 
 # copy enums to python syde
 PY_CXDTYPE_UNKNOWN = CXDTYPE_UNKNOWN
